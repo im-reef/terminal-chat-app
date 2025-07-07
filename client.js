@@ -15,7 +15,7 @@ function getLocalIP() {
   return 'Unknown';
 }
 
-const client = net.createConnection({ port: 5000, host: '192.168.100.105' }, () => {
+const client = net.createConnection({ port: 5000, host: 'SERVER_LOCAL_IP' }, () => {
   console.log(`Connected to server as ${getLocalIP()}`);
 });
 
